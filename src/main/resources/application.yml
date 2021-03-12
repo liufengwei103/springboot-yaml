@@ -1,0 +1,37 @@
+#application.yml与application.properties一同加载
+
+
+person:
+  #  userName: zhangsan
+  #  userName: "zhangsan \n lisi"
+  #字符串不需要用引号，用引号'' 与"" 有区别
+  #''不识别转义字符，原样输出。""识别转义字符，将  userName: "zhangsan \n lisi"识别为换行
+  boss: true
+  birth: 2019/12/13 #日期格式默认为/
+  age: 18
+  pet:
+    name: amao
+    weight: 89
+  #  interests: [lanqiu,zuqiu]
+  interests:
+    - lanqiu
+    - zuqiu
+  animal:
+    - amao
+    - agou
+  #  score: {english:80,math:90}
+  score:
+    english: 80
+    math: 90
+  salarys:
+    - 9999.9
+    - 9999.8
+  allPets:
+    sick:
+      - { name: 阿猫,weight: 89 }  #注意：map中: 后的空格必须有
+      - name: 阿超
+        weight: 78
+      - { name: jerry,weight: 47 }
+    health:
+      - name: agou
+        weight: 90
